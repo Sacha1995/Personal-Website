@@ -1,0 +1,266 @@
+/*
+**************************
+        Projects
+**************************
+*/
+
+.projects {
+  padding: 20px;
+
+  h2,
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    max-width: 200px;
+    margin: 0px auto 20px auto;
+  }
+
+  .containerText {
+    color: white;
+  }
+
+  .containerBtnProjects {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .imgContainer {
+    position: relative;
+
+    .svgScreen {
+      position: absolute;
+      height: auto;
+      width: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -125px
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 30px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  .outsideSectionProject {
+    border: black solid 3px;
+    padding: 20px;
+    border-radius: 14px;
+    max-width: 330px;
+    margin: 0px auto 10px auto;
+    background-image: url("../../public/josh-withers-MO-6ciutGXY-unsplash.jpg");
+
+    h3 {
+      margin-top: 0px;
+      text-align: center;
+    }
+  }
+
+  .projectImg {
+    width: 92%;
+    margin: 0px auto 10px auto;
+    display: block;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 14px;
+  }
+
+  .skills {
+    .containerText {
+      padding: 0px 20px
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      text-align: left;
+      font-size: 20px;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 771px;
+    margin: 0px auto;
+  }
+
+}
+
+@media (min-width: 450px) {
+  .projects {
+    h1 {
+      max-width: none;
+      margin: 0px auto 20px auto;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects {
+    padding: 20px 20px 0px 20px;
+
+    .projectsContainer {
+      display: block;
+      max-width: none;
+      margin: 0px;
+    }
+
+    .outerContainerIntroProjects {
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .outsideSectionProject {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      border: none;
+      background-image: none;
+      max-width: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .insideSectionProject {
+      display: flex;
+    }
+
+    .HomagePiece,
+    .skills,
+    .simpsons,
+    .form {
+      flex-direction: row-reverse;
+    }
+
+    .containerText {
+      background-color: black;
+      align-self: center;
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .containerTextInner {
+      margin: 0px auto 0px auto;
+      width: 40vw;
+      padding: 20px;
+    }
+
+    .HomagePiece .containerTextInner,
+    .skills .containerTextInner {
+      border-radius: 50px 0px;
+    }
+
+    .HomagePiece,
+    .skills {
+      border-radius: 10px 0px;
+    }
+
+    .containerTextInner h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .containerTextInner p,
+    .containerTextInner li:last-child {
+      margin-bottom: 20px;
+    }
+
+    .WeatherWebsite .containerPicture {
+      background-image: url(../../public/weather.jpg);
+    }
+
+    .HomagePiece .containerPicture {
+      background-image: url(../../public/thirdspacelearning.jpg);
+      background-position-x: left;
+    }
+
+    .trafficLight .containerPicture {
+      background-image: url(../../public/trafficlights.jpg);
+    }
+
+    .skills .containerPicture {
+      background-image: url(../../public/skills.jpg);
+      background-position-x: left;
+    }
+
+    .shop .containerPicture {
+      background-image: url(../../public/shop.jpg);
+    }
+
+    .form .containerPicture {
+      background-image: url(../../public/form.jpg);
+      background-position-x: left;
+    }
+
+    .disney .containerPicture {
+      background-image: url(../../public/disney.jpg);
+    }
+
+    .simpsons .containerPicture {
+      background-image: url(../../public/simpsons.jpg);
+      background-position-x: left;
+      background-repeat: repeat;
+      background-size: auto;
+    }
+
+    .containerPicture {
+      height: 100vh;
+      width: 50vw;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-size: auto 100vh;
+    }
+
+    .containerBtnProjects {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}
+
+/*
+************END***********
+*/
