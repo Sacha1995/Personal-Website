@@ -17,6 +17,10 @@ body {
   color: var(--global-color);
 }
 
+.boxShadow {
+  box-shadow: 0px 0px 8px var(--global-color);
+}
+
 .bgColour {
   background-color: var(--global-color);
 }
@@ -32,18 +36,6 @@ body {
 .fill {
   fill: var(--global-color);
 }
-
-// .colour {
-//   color: #ffb400;
-// }
-
-// .bgColour {
-//   background-color: #ffb400;
-// }
-
-// .borderColour {
-//   border-color: #ffb400;
-// }
 
 h1,
 h2,
@@ -115,7 +107,36 @@ img {
 }
 
 .settingsIcon {
-  left: 0px
+  left: 0px;
+  top: 0px;
+  animation: rotate 5s infinite linear;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.settingsIconContainer {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 20;
+  background-color: #252525;
+}
+
+.settingsContainer {
+  height: 0;
+  width: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .containerLinksNavBar {
@@ -214,3 +235,5 @@ img {
     flex-direction: row;
   }
 }
+
+@media (min-width: 600px) {}

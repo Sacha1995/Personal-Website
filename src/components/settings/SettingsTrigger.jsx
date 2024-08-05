@@ -17,14 +17,16 @@ const SettingsTrigger = () => {
 
   return (
     <div className="settingsContainer">
-      <Image
-        src="./settings.svg"
-        alt="Settings icon"
-        className="settingsIcon"
-        height="30"
-        width="30"
-        onClick={() => openPopUp()}
-      />
+      <div className="settingsIconContainer">
+        <Image
+          src="./settings.svg"
+          alt="Settings icon"
+          className="settingsIcon"
+          height="30"
+          width="30"
+          onClick={() => openPopUp()}
+        />
+      </div>
       <SettingsPopUp displayPopUp={displayPopUp} closePopUp={closePopUp} />
     </div>
   );

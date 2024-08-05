@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Buttons from "../reusable-code/Button";
 import ProjectImg from "./projectImg";
+import useWindowDimensions from "@/utils/customHooks";
 
 const SectionProjects = ({
   srcWebsite,
@@ -11,8 +12,12 @@ const SectionProjects = ({
   sectionName,
   src,
 }) => {
+  const { width } = useWindowDimensions();
+
   return (
-    <section className="outsideSectionProject">
+    <section
+      className={`outsideSectionProject ${width < 1000 ? "boxShadow" : ""}`}
+    >
       <div className={`${sectionName} insideSectionProject`}>
         <div className="containerText">
           <div className="containerTextInner">
