@@ -1,5 +1,5 @@
 import Button from "../reusable-code/Button";
-import ProjectImg from "./ProjectImg";
+import ProjectImg from "./ProjectImgs";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

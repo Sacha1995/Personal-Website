@@ -1,4 +1,4 @@
-import ProjectImg from "./ProjectImg";
+import ProjectImg from "./ProjectImgs";
 
 const CarouselItem = ({ technologies, alt, description, src, title }) => {
   return (
