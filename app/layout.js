@@ -1,10 +1,9 @@
 import { Inter } from "next/font/google";
-import "./globals.scss";
+import "../src/css/globals.scss";
 import StoreProvider from "./StoreProvider";
-import BurgerMenu from "@/components/navigation/BurgerMenu";
 import SettingsTrigger from "@/components/settings/SettingsTrigger";
 import { ColorProvider } from "@/components/settings/ColorProvider";
-import PageAnimatePresence from "@/components/animation/PageAnimationPresence";
+import Socials from "@/components/socials/Socials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageAnimatePresence>
-          <StoreProvider>
-            <ColorProvider>
-              <BurgerMenu />
-              <SettingsTrigger />
-              {children}
-            </ColorProvider>
-          </StoreProvider>
-        </PageAnimatePresence>
+        <StoreProvider>
+          <ColorProvider>
+            <Socials />
+            <SettingsTrigger />
+            {children}
+          </ColorProvider>
+        </StoreProvider>
       </body>
     </html>
   );
