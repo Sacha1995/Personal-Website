@@ -5,10 +5,10 @@ const IntroText = () => {
       <h2 className="mb">SOFTWARE ENGINEER</h2>
       <p className="mb">
         Originally from the Netherlands and now based in England, I recently
-        completed a coding bootcamp. Passionate about front-end development, I
-        love creating intuitive user experiences and exploring new technologies.
-        I am a hard worker eager to contribute and learn. Let&#39;s create
-        something great together!
+        completed a coding bootcamp. Passionate about front&#8209;end
+        development, I love creating intuitive user experiences and exploring
+        new technologies. I am a hard worker eager to contribute and learn.
+        Let&#39;s create something great together!
       </p>
     </div>
   );
