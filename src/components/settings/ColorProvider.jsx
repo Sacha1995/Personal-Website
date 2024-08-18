@@ -7,7 +7,7 @@ const ColorContext = createContext();
 
 // Create a provider component
 export const ColorProvider = ({ children }) => {
-  const [color, setColor] = useState(); // Default color
+  const [color, setColor] = useState();
 
   const changeColor = (newColor) => {
     setColor(newColor);

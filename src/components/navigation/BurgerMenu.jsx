@@ -4,27 +4,24 @@ import Close from "../../../public/close.svg";
 import Open from "../../../public/menu.svg";
 import Image from "next/image";
 import Dynamic from "next/dynamic";
-import { usePathname, useRouter } from "next/navigation";
-
-//import styles 👇
 import "react-modern-drawer/dist/index.css";
 
 const Drawer = Dynamic(() => import("react-modern-drawer"), {
   suspense: true,
 });
 
-const BurgerMenu = () => {
-  const router = useRouter();
+const BurgerMenu = ({ refs, activeSection }) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const path = usePathname();
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-  const handleNavigation = (path) => {
+  const handleNavigation = (section) => {
     toggleDrawer();
-    router.push(path);
+    if (refs[section].current) {
+      refs[section].current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -50,29 +47,29 @@ const BurgerMenu = () => {
         />
         <ul className="containerLinksNavBar">
           <li
-            onClick={() => handleNavigation("/")}
-            className={path === "/" ? "colour" : ""}
+            onClick={() => handleNavigation("home")}
+            className={activeSection === "home" ? "colour" : ""}
           >
             <img src="./home.svg" alt="home icon" className="navIcon" />
             HOME
           </li>
           <li
-            onClick={() => handleNavigation("/about")}
-            className={path === "/about" ? "colour" : ""}
+            onClick={() => handleNavigation("skills")}
+            className={activeSection === "skills" ? "colour" : ""}
           >
-            <img src="./about.svg" alt="about icon" className="navIcon" />
-            ABOUT
+            <img src="./about.svg" alt="skills icon" className="navIcon" />
+            SKILLS
           </li>
           <li
-            onClick={() => handleNavigation("/projects")}
-            className={path === "/projects" ? "colour" : ""}
+            onClick={() => handleNavigation("projects")}
+            className={activeSection === "projects" ? "colour" : ""}
           >
             <img src="./projects.svg" alt="projects icon" className="navIcon" />
             PROJECTS
           </li>
           <li
-            onClick={() => handleNavigation("/experience&education")}
-            className={path === "/experience&education" ? "colour" : ""}
+            onClick={() => handleNavigation("experience")}
+            className={activeSection === "experience" ? "colour" : ""}
           >
             <img
               src="./experience.svg"
@@ -80,6 +77,13 @@ const BurgerMenu = () => {
               className="navIcon"
             />
             EXPERIENCE & EDUCATION
+          </li>
+          <li
+            onClick={() => handleNavigation("contact")}
+            className={activeSection === "contact" ? "colour" : ""}
+          >
+            <img src="./email.svg" alt="email icon" className="navIcon" />
+            CONTACT ME
           </li>
         </ul>
       </Drawer>

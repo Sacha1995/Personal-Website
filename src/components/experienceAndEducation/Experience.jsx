@@ -5,12 +5,14 @@ const Experience = () => {
       <ol className="experienceList">
         <li className="experienceItem">
           <div className="containerStylingFront">
-            <div className="containerIcon bgColour">
-              <img
-                src="./projects.svg"
-                alt="experience icon"
-                className="expIcon"
-              />
+            <div className="containerIcon">
+              <div className="containerBackground bgColour">
+                <img
+                  src="./projects.svg"
+                  alt="experience icon"
+                  className="expIcon"
+                />
+              </div>
             </div>
             <div className="line"></div>
           </div>
@@ -23,21 +25,21 @@ const Experience = () => {
             was introduced to and developed skills with React, Typescript, SASS,
             HTML, CSS, Node, Redux, Git and Responsive Development alongside a
             host of other skills. I chose to do the full-time course as I feel
-            committed to building a career within the software industry and I
-            have already made lots of my projects available via my GitHub for
-            you to review. I have immensely enjoyed the process and found that I
-            have a real passion for creating websites and user interfaces and
-            feel that frontend development would be a natural fit for me.
+            committed to building a career within the software industry. I have
+            immensely enjoyed the process and found that I have a real passion
+            for creating websites and user interfaces.
           </p>
         </li>
         <li className="experienceItem">
           <div className="containerStylingFront">
-            <div className="containerIcon bgColour">
-              <img
-                src="./projects.svg"
-                alt="experience icon"
-                className="expIcon"
-              />
+            <div className="containerIcon">
+              <div className="containerBackground bgColour">
+                <img
+                  src="./projects.svg"
+                  alt="experience icon"
+                  className="expIcon"
+                />
+              </div>
             </div>
             <div className="line"></div>
           </div>
@@ -50,17 +52,19 @@ const Experience = () => {
             completed this course whilst also working full time as a primary
             school teacher and it helped to form a base in my development
             skills. The course covered HTML, CSS, JavaScript, Debugging,
-            Development Best practices and much more.
+            Development, best practices, and much more.
           </p>
         </li>
         <li className="experienceItem">
           <div className="containerStylingFront">
-            <div className="containerIcon bgColour">
-              <img
-                src="./projects.svg"
-                alt="experience icon"
-                className="expIcon"
-              />
+            <div className="containerIcon">
+              <div className="containerBackground bgColour">
+                <img
+                  src="./projects.svg"
+                  alt="experience icon"
+                  className="expIcon"
+                />
+              </div>
             </div>
             <div className="line"></div>
           </div>
@@ -68,10 +72,7 @@ const Experience = () => {
           <p className="date"> February 2017 &ndash; December 2023 </p>
           <p>
             I am a fully qualified primary school teacher with two master&#39;s
-            degrees. I previously worked as a primary school teacher in both the
-            Netherlands, UK and Curacao. I was a highly focused and passionate
-            teacher and teaching remains on of my key areas of interest and it
-            is something I would like to translate into the software world.
+            degrees.
           </p>
         </li>
       </ol>

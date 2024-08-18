@@ -1,0 +1,74 @@
+.contact {
+  padding: 20px 40px;
+  max-width: 500px;
+  margin: 0px auto 20px auto;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin: 0px auto;
+    display: block;
+    max-width: 200px;
+    align-self: center;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+
+  .containerBtn {
+    width: fit-content;
+    height: 35px;
+    align-self: center;
+    margin: 0px auto 20px auto;
+  }
+
+  .sendIcon {
+    height: 25px;
+    margin-right: 1px;
+  }
+
+  label {
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #252525;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .errorMessage {
+    margin-bottom: 3px;
+  }
+
+  .feedback-message {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .feedback-message.success {
+    color: green;
+  }
+
+  .feedback-message.error {
+    color: red;
+  }
+
+}

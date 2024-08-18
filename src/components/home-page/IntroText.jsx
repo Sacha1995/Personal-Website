@@ -4,10 +4,11 @@ const IntroText = () => {
       <h1 className="name colour">I&#39;M SACHA UIJLEN.</h1>
       <h2 className="mb">SOFTWARE ENGINEER</h2>
       <p className="mb">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-        praesentium tenetur, adipisci earum maiores molestias quae consectetur
-        recusandae pariatur ab! Eveniet esse ex magnam soluta alias totam
-        corrupti delectus voluptate!
+        Originally from the Netherlands and now based in England, I recently
+        completed a coding bootcamp. Passionate about front-end development, I
+        love creating intuitive user experiences and exploring new technologies.
+        I am a hard worker eager to contribute and learn. Let&#39;s create
+        something great together!
       </p>
     </div>
   );

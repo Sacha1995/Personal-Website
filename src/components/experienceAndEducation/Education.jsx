@@ -5,12 +5,14 @@ const Education = () => {
       <ol className="educationList">
         <li className="educationItem">
           <div className="containerStylingFront">
-            <div className="containerIcon bgColour">
-              <img
-                src="./education.svg"
-                alt="education icon"
-                className="eduIcon"
-              />
+            <div className="containerIcon">
+              <div className="containerBackground bgColour">
+                <img
+                  src="./education.svg"
+                  alt="education icon"
+                  className="eduIcon"
+                />
+              </div>
             </div>
             <div className="line"></div>
           </div>
@@ -29,12 +31,14 @@ const Education = () => {
         </li>
         <li className="educationItem">
           <div className="containerStylingFront">
-            <div className="containerIcon bgColour">
-              <img
-                src="./education.svg"
-                alt="education icon"
-                className="eduIcon"
-              />
+            <div className="containerIcon">
+              <div className="containerBackground bgColour">
+                <img
+                  src="./education.svg"
+                  alt="education icon"
+                  className="eduIcon"
+                />
+              </div>
             </div>
             <div className="line"></div>
           </div>

@@ -1,0 +1,99 @@
+.experienceAndEducation {
+  padding: 20px 40px;
+  max-width: 850px;
+
+  h2,
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 30px
+  }
+
+  ul {
+    color: white;
+  }
+
+  .experienceItem,
+  .educationItem {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, fit-content(50px));
+    align-items: flex-start;
+
+    .date {
+      margin-bottom: 10px;
+      font-style: italic
+    }
+  }
+
+  .containerIcon {
+    margin-top: 12px;
+    flex-basis: 47px;
+
+    .containerBackground {
+      height: 35px;
+      width: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+
+      .expIcon,
+      .eduIcon {
+        height: 20px;
+      }
+    }
+  }
+
+  .containerStylingFront {
+    grid-column: 1;
+    grid-row: 1/ 4;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+
+    .line {
+      height: 100%;
+      width: 2px;
+      background-color: #252525;
+    }
+  }
+
+  .specialisation {
+    font-style: italic;
+  }
+
+  @media (min-width: 550px) {
+    h1 {
+      max-width: none;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .experienceAndEducation {
+    padding: 20px 60px;
+    margin: 0px auto 20px auto;
+  }
+}

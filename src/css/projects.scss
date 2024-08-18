@@ -1,0 +1,390 @@
+/*
+**************************
+        Projects
+**************************
+*/
+
+.projects {
+  padding: 20px 50px;
+
+  h2,
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    max-width: 200px;
+    margin: 0px auto 20px auto;
+  }
+
+  .containerText {
+    color: rgb(255, 255, 255);
+  }
+
+  .containerBtnProjects {
+    display: flex;
+    gap: 0 5px;
+    justify-content: space-evenly;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .projectItem {
+    max-width: 400px;
+    margin: 0px auto 20px auto;
+
+    p {
+      margin-bottom: 10px;
+      padding: 0px 5px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .projectImg {
+      width: 100%;
+
+      display: block;
+    }
+  }
+
+  .containerPicture {
+    display: block;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 0px auto 10px auto;
+    z-index: 1;
+    cursor: pointer;
+
+    .containerText {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to top, #252525 15%, transparent 100%);
+      z-index: 4;
+
+      ul {
+        list-style-type: none;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding: 0px 5px;
+        margin-bottom: 5px;
+
+        li {
+          border: white 1px solid;
+          padding: 1px 2px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  .skills {
+    .containerText {
+      padding: 0px 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      text-align: left;
+      font-size: 20px;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+
+  .projectsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    gap: 10px 40px;
+  }
+
+}
+
+//carousel
+.embla {
+  max-width: 600px;
+  margin: auto;
+
+  .containerBtnProjects {
+    max-width: 400px;
+    margin: 0px auto 30px auto;
+  }
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  gap: 0 20px;
+  padding: 0 20px;
+  touch-action: pan-y pinch-zoom;
+
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+  min-width: 0;
+  max-width: 400px;
+  flex: 0 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h3,
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.embla__controls {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin: 10px auto 20px auto;
+  max-width: 400px;
+}
+
+.embla__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.embla__button {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+  border-radius: 50%;
+  border: solid white 1px;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.embla__button:hover {
+  background-color: var(--global-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.embla__button--prev svg {
+  padding-right: 3px;
+}
+
+.embla__button--next svg {
+  padding-left: 3px;
+}
+
+.embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+
+.embla__button__svg {
+  width: 50%;
+  height: 50%;
+  fill: white;
+}
+
+.embla__dots {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.embla__dot {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.embla__dot:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+
+.embla__dot--selected:after {
+  background-color: var(--global-color);
+}
+
+
+@media (min-width: 450px) {
+  .projects {
+
+    h1 {
+      max-width: none;
+      margin: 0px auto 20px auto;
+    }
+
+    .projectItem {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .containerPicture .containerText {
+      background: linear-gradient(to top, #252525 10%, transparent 100%);
+
+      ul {
+        margin-bottom: 20px;
+        gap: 10px;
+
+        li {
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .containerBtnProjects {
+      .btn {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+@media (min-width: 875px) {
+  .projects {
+    .projectsContainer {
+      gap: 10px 10px;
+    }
+
+    .projectItem {
+      min-width: 350px;
+    }
+
+    .embla {
+      max-width: 800px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    .projectItem {
+      h3 {
+        font-size: 26px;
+      }
+    }
+
+    .projectsContainer {
+      gap: 10px 25px;
+    }
+
+    .containerPicture:hover .containerText {
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+
+    .containerPicture .containerText {
+      background: linear-gradient(to top, #252525 25%, transparent 100%);
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      left: 0;
+
+      ul {
+        margin-bottom: 20px;
+        gap: 10px;
+
+        li {
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .embla {
+      max-width: 830px;
+    }
+  }
+
+  @media (min-width: 1367px) {
+    .projects {
+      .embla {
+        max-width: 1250px;
+      }
+    }
+  }
+}
+
+
+/*
+************END***********
+*/

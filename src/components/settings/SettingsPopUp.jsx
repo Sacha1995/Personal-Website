@@ -6,14 +6,18 @@ import { colours } from "@/config";
 import { useColor } from "./ColorProvider";
 import { useEffect, useRef } from "react";
 
-const SettingsPopUp = ({ displayPopUp, closePopUp }) => {
+const SettingsPopUp = ({ displayPopUp, togglePopUp, settingsRef }) => {
   const { changeColor } = useColor();
   const popupRef = useRef(null);
 
   // Close pop-up when clicking outside of it
   const handleClickOutside = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
-      closePopUp();
+    if (
+      popupRef.current &&
+      !popupRef.current.contains(event.target) &&
+      !settingsRef.current.contains(event.target)
+    ) {
+      togglePopUp(event);
     }
   };
 
@@ -45,10 +49,12 @@ const SettingsPopUp = ({ displayPopUp, closePopUp }) => {
             top: 72,
             bottom: 0,
             width: "280px",
-          }} // Adjust as needed
+          }}
         >
           <Image
-            onClick={closePopUp}
+            onClick={(e) => {
+              togglePopUp(e);
+            }}
             src="./close.svg"
             alt="close icon"
             className="closeSettings"
