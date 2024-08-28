@@ -41,7 +41,7 @@ export default function Home() {
       )}
       <NavigationItems refs={refs} />
       <div ref={homeRef}>
-        <ParticlesBg />
+        {/* <ParticlesBg /> */}
         <HomePage refs={refs} />
       </div>
       <div ref={skillsRef}>
