@@ -16,43 +16,17 @@ const Experience = () => {
             </div>
             <div className="line"></div>
           </div>
-          <h3>The Jump School Software engineer bootcamp</h3>
-          <p className="date"> May 2024 &ndash; August 2024</p>
+          <h3>Website developer, iOWNA</h3>
+          <p className="date"> August 2024 &ndash; present </p>
           <p>
-            As a full-time student at the jump school bootcamp I have been
-            taught by industry recognized senior developers who specialise in
-            helping candidates become software engineers. During my bootcamp I
-            was introduced to and developed skills with React, Typescript, SASS,
-            HTML, CSS, Node, Redux, Git and Responsive Development alongside a
-            host of other skills. I chose to do the full-time course as I feel
-            committed to building a career within the software industry. I have
-            immensely enjoyed the process and found that I have a real passion
-            for creating websites and user interfaces.
-          </p>
-        </li>
-        <li className="experienceItem">
-          <div className="containerStylingFront">
-            <div className="containerIcon">
-              <div className="containerBackground bgColour">
-                <img
-                  src="./projects.svg"
-                  alt="experience icon"
-                  className="expIcon"
-                />
-              </div>
-            </div>
-            <div className="line"></div>
-          </div>
-          <h3>Treehouse Self Learning / Development course</h3>
-          <p className="date"> July 2023 &ndash; May 2024 </p>
-          <p>
-            I undertook a self-driven learning course on treehouse that covered
-            the basics of web development. I choose the front-end web
-            development track and have completed over 58 hours of learning. I
-            completed this course whilst also working full time as a primary
-            school teacher and it helped to form a base in my development
-            skills. The course covered HTML, CSS, JavaScript, Debugging,
-            Development, best practices, and much more.
+            At iOWNA, I designed and built a responsive website to improve user
+            experience and attract new clients. Using Next.js, Tailwind CSS, and
+            TypeScript, I created a site that looks great and works well on any
+            device. My main goal was to make the site easy to use and visually
+            appealing, so visitors have a positive experience and are more
+            likely to become clients. I worked closely with the marketing and
+            product teams to ensure the website supported iOWNA&#39;s goals and
+            helped draw in new business.
           </p>
         </li>
         <li className="experienceItem">
