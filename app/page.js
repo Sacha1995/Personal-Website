@@ -30,18 +30,18 @@ export default function Home() {
   };
 
   //stop prerendering of navigationsItems, because they conditionally render
-  const NavigationItems = dynamic(() =>
-    import("@/components/navigation/NavigationItems")
-  );
+  // const NavigationItems = dynamic(() =>
+  //   import("@/components/navigation/NavigationItems")
+  // );
 
   return (
     <main>
       {showAnimation && (
         <FirstLoadAnimation onComplete={() => setShowAnimation(false)} />
       )}
-      <NavigationItems refs={refs} />
+      {/* <NavigationItems refs={refs} /> */}
       <div ref={homeRef}>
-        {/* <ParticlesBg /> */}
+        <ParticlesBg />
         <HomePage refs={refs} />
       </div>
       <div ref={skillsRef}>
