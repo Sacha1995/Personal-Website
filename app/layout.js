@@ -1,11 +1,9 @@
-import { Inter } from "next/font/google";
 import "../src/css/globals.scss";
+import "../app/fonts.css";
 import StoreProvider from "./StoreProvider";
 import SettingsTrigger from "@/components/settings/SettingsTrigger";
 import { ColorProvider } from "@/components/settings/ColorProvider";
 import Socials from "@/components/socials/Socials";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sacha Uijlen",
@@ -15,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <StoreProvider>
           <ColorProvider>
             <Socials />

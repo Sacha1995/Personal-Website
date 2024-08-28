@@ -6,7 +6,7 @@ body {
 
 :root {
   --global-color: #ffb400; //default color
-  font-family: ui-sans-serif,
+  font-family: "Inter", ui-sans-serif,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -261,7 +261,7 @@ img {
     border-bottom: rgba(211, 211, 211, 0.486) 1px solid;
     cursor: pointer;
     font-size: 22px;
-    font-family: ui-sans-serif,
+    font-family: "Inter", ui-sans-serif,
       system-ui,
       -apple-system,
       BlinkMacSystemFont,
