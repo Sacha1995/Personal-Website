@@ -60,20 +60,6 @@
     margin-left: 10px;
   }
 
-  .outsideSectionProject {
-    border: black solid 3px;
-    padding: 20px;
-    border-radius: 14px;
-    max-width: 330px;
-    margin: 0px auto 20px auto;
-    background-image: url("../../public/josh-withers-MO-6ciutGXY-unsplash.jpg");
-
-    h3 {
-      margin-top: 0px;
-      text-align: center;
-    }
-  }
-
   .projectImg {
     width: 92%;
     margin: 0px auto 10px auto;
@@ -137,21 +123,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .outsideSectionProject {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      border: none;
-      background-image: none;
-      max-width: none;
-      padding: 0px;
-      margin: 0px;
-    }
-
-    .insideSectionProject {
-      display: flex;
     }
 
     .HomagePiece,
