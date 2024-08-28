@@ -40,16 +40,16 @@ const SectionProjects = ({
       >
         <div
           className="containerPicture"
-          onClick={() => {
-            window.open(srcWebsite, "_blank");
-          }}
+          // onClick={() => {
+          //   window.open(srcWebsite, "_blank");
+          // }}
         >
           <ProjectImg src={src} title={title} />
           <div
             className="containerText"
-            onClick={() => {
-              window.open(srcWebsite, "_blank");
-            }}
+            // onClick={() => {
+            //   window.open(srcWebsite, "_blank");
+            // }}
           >
             <h3>{title}</h3>
             <p>{description}</p>

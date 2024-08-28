@@ -8,9 +8,9 @@ const CarouselItem = ({ technologies, alt, description, src, title }) => {
           <ProjectImg src={src} title={alt} />
           <div
             className="containerText"
-            onClick={() => {
-              window.open(srcWebsite, "_blank");
-            }}
+            // onClick={() => {
+            //   window.open(srcWebsite, "_blank");
+            // }}
           >
             <h3>{title}</h3>
             <p>{description}</p>
