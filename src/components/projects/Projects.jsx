@@ -92,7 +92,6 @@ const Projects = () => {
           {projects.map((project) => {
             const {
               title,
-              sectionName,
               description,
               srcWebsite,
               srcGithub,

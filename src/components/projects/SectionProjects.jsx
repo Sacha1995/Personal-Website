@@ -1,8 +1,11 @@
+"use client";
 import Button from "../reusable-code/Button";
 import ProjectImg from "./ProjectImgs";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 
 const SectionProjects = ({
   srcWebsite,
@@ -17,17 +20,37 @@ const SectionProjects = ({
     triggerOnce: true,
     threshold: 0.1,
   });
+  const [open, setOpen] = useState(false);
+  const modalRef = useRef(null);
 
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const handleBackdropClick = (e) => {
+    // Check if the click is outside the modal content
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      handleClose();
     }
-  }, [controls, inView]);
+  };
 
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+
+    // Add event listener for clicks outside the modal
+    document.addEventListener("mousedown", handleBackdropClick);
+
+    // Clean up event listener
+    return () => {
+      document.removeEventListener("mousedown", handleBackdropClick);
+    };
+  }, [controls, inView]);
 
   return (
     <section>
@@ -40,17 +63,38 @@ const SectionProjects = ({
       >
         <div
           className="containerPicture"
-          // onClick={() => {
-          //   window.open(srcWebsite, "_blank");
-          // }}
+          aria-label="Click image to make the image bigger"
+          tabIndex="0"
+          onClick={handleOpen}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleOpen();
+            }
+          }}
         >
           <ProjectImg src={src} title={title} />
           <div
             className="containerText"
-            // onClick={() => {
-            //   window.open(srcWebsite, "_blank");
-            // }}
+            aria-label="Click image to make the image bigger"
+            onClick={handleOpen}
           >
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-label={`modal ${title}`}
+            >
+              <Box className="box" ref={modalRef}>
+                <img
+                  src={src}
+                  alt={title}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "20px",
+                  }}
+                />
+              </Box>
+            </Modal>
             <h3>{title}</h3>
             <p>{description}</p>
             <ul>
