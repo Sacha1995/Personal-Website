@@ -7,7 +7,16 @@ const SideMenuItem = ({
   activeSection,
 }) => {
   return (
-    <li onClick={() => handleNavigation(section)} className="sideMenuItem">
+    <li
+      onClick={() => handleNavigation(section)}
+      tabIndex="0"
+      className="sideMenuItem"
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          handleNavigation(section);
+        }
+      }}
+    >
       <span className="sideMenuName">{title}</span>
       <div
         className={`containerIcon ${
