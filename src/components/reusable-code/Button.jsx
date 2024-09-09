@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
 
-const Button = ({ buttonText, link, target, src, alt, className }) => {
+const Button = ({
+  buttonText,
+  link,
+  target,
+  src,
+  alt,
+  className,
+  download,
+}) => {
   return (
-    <a className="unstyled-button" href={link} target={target}>
+    <a
+      className="unstyled-button"
+      href={link}
+      target={target}
+      download={download}
+    >
       <motion.div
         className="containerBtn borderColour bgGradient"
         initial={{ backgroundPosition: "10% 0" }}

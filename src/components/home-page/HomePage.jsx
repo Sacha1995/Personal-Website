@@ -19,10 +19,12 @@ const HomePage = ({ refs }) => {
           <IntroText />
           <Button
             buttonText="Download CV"
-            src="./downloads.svg"
+            link="./Sacha_Uijlen_CV.pdf"
+            src="downloads.svg"
             alt="arrow down"
             target="_blank"
             className="rightArrow"
+            download={true}
           />
         </div>
         <ArrowDown handleNavigation={handleNavigation} />

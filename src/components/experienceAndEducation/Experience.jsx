@@ -19,14 +19,14 @@ const Experience = () => {
           <h3>Website developer, iOWNA</h3>
           <p className="date"> August 2024 &ndash; present </p>
           <p>
-            At iOWNA, I designed and built a responsive website to improve user
-            experience and attract new clients. Using Next.js, Tailwind CSS, and
-            TypeScript, I created a site that looks great and works well on any
-            device. My main goal was to make the site easy to use and visually
-            appealing, so visitors have a positive experience and are more
-            likely to become clients. I worked closely with the marketing and
-            product teams to ensure the website supported iOWNA&#39;s goals and
-            helped draw in new business.
+            I designed and built a responsive website for iOWNA to make the user
+            experience smoother and attract more clients. Using Next.js,
+            Tailwind CSS, and TypeScript, I created a site that looks great and
+            works well on any device. The main goal was to keep things
+            user-friendly and visually appealing, so visitors enjoy their time
+            on the site and are more likely to convert into clients. I worked
+            closely with the marketing and product teams to make sure the site
+            supports iOWNA&#39;s goals and helps bring in new business.
           </p>
         </li>
         <li className="experienceItem">
