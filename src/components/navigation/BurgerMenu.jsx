@@ -26,12 +26,25 @@ const BurgerMenu = ({ refs, activeSection }) => {
 
   return (
     <>
-      <Image
-        onClick={toggleDrawer}
-        src={Open}
-        alt="burger menu"
+      <div
+        tabindex="0"
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            toggleDrawer();
+          }
+        }}
+        role="button"
+        aria-label="Burger menu button"
         className="burgerMenu"
-      />
+        style={{ height: "50px", width: "50px", padding: "0px" }}
+      >
+        <Image
+          onClick={toggleDrawer}
+          src={Open}
+          alt="burger menu"
+          className="burgerMenu"
+        />
+      </div>
       <Drawer
         open={isOpen}
         onClose={toggleDrawer}
@@ -39,15 +52,34 @@ const BurgerMenu = ({ refs, activeSection }) => {
         className="slideMenu"
         customIdSuffix="my-drawer"
       >
-        <Image
-          onClick={toggleDrawer}
-          src={Close}
-          alt="close icon"
+        <div
+          tabindex="0"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              toggleDrawer();
+            }
+          }}
+          role="button"
+          aria-label="Close burger menu button"
           className="closeIcon"
-        />
+          style={{ height: "50px", width: "50px", padding: "0px" }}
+        >
+          <Image
+            onClick={toggleDrawer}
+            src={Close}
+            alt="close icon"
+            className="closeIcon"
+          />
+        </div>
         <ul className="containerLinksNavBar">
           <li
             onClick={() => handleNavigation("home")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleNavigation("home");
+              }
+            }}
+            tabIndex="0"
             className={activeSection === "home" ? "colour" : ""}
           >
             <img src="./home.svg" alt="home icon" className="navIcon" />
@@ -55,6 +87,12 @@ const BurgerMenu = ({ refs, activeSection }) => {
           </li>
           <li
             onClick={() => handleNavigation("skills")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleNavigation("skills");
+              }
+            }}
+            tabIndex="0"
             className={activeSection === "skills" ? "colour" : ""}
           >
             <img src="./about.svg" alt="skills icon" className="navIcon" />
@@ -62,6 +100,12 @@ const BurgerMenu = ({ refs, activeSection }) => {
           </li>
           <li
             onClick={() => handleNavigation("projects")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleNavigation("projects");
+              }
+            }}
+            tabIndex="0"
             className={activeSection === "projects" ? "colour" : ""}
           >
             <img src="./projects.svg" alt="projects icon" className="navIcon" />
@@ -69,6 +113,12 @@ const BurgerMenu = ({ refs, activeSection }) => {
           </li>
           <li
             onClick={() => handleNavigation("experience")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleNavigation("experience");
+              }
+            }}
+            tabIndex="0"
             className={activeSection === "experience" ? "colour" : ""}
           >
             <img
@@ -80,6 +130,12 @@ const BurgerMenu = ({ refs, activeSection }) => {
           </li>
           <li
             onClick={() => handleNavigation("contact")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleNavigation("contact");
+              }
+            }}
+            tabIndex="0"
             className={activeSection === "contact" ? "colour" : ""}
           >
             <img src="./email.svg" alt="email icon" className="navIcon" />

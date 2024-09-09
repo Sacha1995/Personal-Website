@@ -156,6 +156,6 @@ export const carouselItemsInfo = [
     alt: "holidough bill splits screenshots",
     description:
       "Add split expenses to keep track of your expenses with friends/family.",
-    technologies: ["SASS", "Javascript", "REACT", "Graph JS"],
+    technologies: ["SASS", "Javascript", "REACT", "Chart JS"],
   },
 ];

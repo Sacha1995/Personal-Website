@@ -10,6 +10,7 @@ const Socials = () => {
               data-original="#000000"
             ></path>
           </g>
+          <span className="vh">Link to Github Profile</span>
         </svg>
       </a>
       <a href="https://www.linkedin.com/in/sachauijlen/" target="_blank">
@@ -22,6 +23,7 @@ const Socials = () => {
               data-original="#000000"
             ></path>
           </g>
+          <span className="vh">Link to Linked in profile</span>
         </svg>
       </a>
     </div>

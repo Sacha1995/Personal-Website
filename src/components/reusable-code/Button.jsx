@@ -15,6 +15,11 @@ const Button = ({
       href={link}
       target={target}
       download={download}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          window.open(link, "_blank");
+        }
+      }}
     >
       <motion.div
         className="containerBtn borderColour bgGradient"
@@ -27,7 +32,9 @@ const Button = ({
           backgroundSize: "200% 100%",
         }}
       >
-        <button className="btn">{buttonText}</button>
+        <button className="btn" tabindex="-1">
+          {buttonText}
+        </button>
         {src && (
           <div className="containerBtnImg bgColour">
             <img src={src} alt={alt} className={className} />

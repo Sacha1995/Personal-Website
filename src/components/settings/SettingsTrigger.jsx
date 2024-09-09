@@ -15,7 +15,16 @@ const SettingsTrigger = () => {
 
   return (
     <div className="settingsContainer">
-      <div className="settingsIconContainer" ref={settingsRef}>
+      <div
+        className="settingsIconContainer"
+        ref={settingsRef}
+        tabIndex="0"
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            togglePopUp(e);
+          }
+        }}
+      >
         <Image
           src="./settings.svg"
           alt="Settings icon"

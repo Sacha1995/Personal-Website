@@ -51,31 +51,51 @@ const SettingsPopUp = ({ displayPopUp, togglePopUp, settingsRef }) => {
             width: "280px",
           }}
         >
-          <Image
-            onClick={(e) => {
-              togglePopUp(e);
+          <div
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                togglePopUp(e);
+              }
             }}
-            src="./close.svg"
-            alt="close icon"
-            className="closeSettings"
-            width={15}
-            height={15}
-          />
+            tabIndex="0"
+          >
+            <span className="vh">Close button</span>
+            <Image
+              onClick={(e) => {
+                togglePopUp(e);
+              }}
+              src="./close.svg"
+              alt="close icon"
+              className="closeSettings"
+              width={15}
+              height={15}
+            />
+          </div>
           <p>Choose Colour:</p>
           {colours.map((item) => {
             const { hex, colour } = item;
             return (
-              <Image
-                key={hex}
-                width={30}
-                height={30}
-                src={`./${colour}.svg`}
-                alt={colour}
-                className="colourIcon"
-                onClick={() => {
-                  changeColor(hex);
+              <div
+                tabIndex="0"
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    changeColor(hex);
+                  }
                 }}
-              />
+                style={{ display: "inline" }}
+              >
+                <Image
+                  key={hex}
+                  width={30}
+                  height={30}
+                  src={`./${colour}.svg`}
+                  alt={colour}
+                  className="colourIcon"
+                  onClick={() => {
+                    changeColor(hex);
+                  }}
+                />
+              </div>
             );
           })}
         </motion.div>
