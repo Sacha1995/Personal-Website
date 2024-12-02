@@ -87,6 +87,16 @@ const CarouselItem = ({ technologies, alt, description, src, title }) => {
           aria-describedby={`modal-description-${title}`}
         >
           <Box ref={modalRef} className="box">
+            <button
+              className="closeButton"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleClose();
+              }}
+              aria-label="Close modal"
+            >
+              &times;
+            </button>
             <img src={src} alt={title} className="modalImage" />
           </Box>
         </Modal>

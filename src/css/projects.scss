@@ -137,36 +137,32 @@
   position: relative;
   top: 50%;
   left: 50%;
-  width: 90%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 90vw;
   max-width: 1000px;
+  aspect-ratio: 20 / 19;
+  border-radius: 20px;
 }
 
 .closeButton {
   position: absolute;
-  top: 10px;
-  /* Adjust as needed */
+  top: 5px;
   right: 10px;
-  /* Adjust as needed */
   background: none;
   border: none;
-  font-size: 24px;
-  /* Adjust for size */
+  font-size: 40px;
   cursor: pointer;
-  color: #fff;
-  /* Change based on your design */
+  color: black;
   z-index: 10;
-  cursor: pointer;
 }
 
 .modalImage {
-  width: auto;
-  height: 90vh;
-  max-height: 1000px;
-  aspect-ratio: 20 / 19;
-  border-radius: 20px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center top;
-  transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 //carousel
@@ -353,6 +349,14 @@
         margin-top: 1px;
       }
     }
+  }
+}
+
+@media (min-width: 700px) {
+  .box {
+    height: 90vh;
+    width: auto;
+    max-width: 1000px;
   }
 }
 

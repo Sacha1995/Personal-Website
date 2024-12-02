@@ -86,7 +86,10 @@ const SectionProjects = ({
               <Box className="box" ref={modalRef}>
                 <button
                   className="closeButton"
-                  onClick={handleClose}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleClose();
+                  }}
                   aria-label="Close modal"
                 >
                   &times;
