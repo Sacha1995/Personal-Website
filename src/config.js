@@ -63,7 +63,9 @@ export const sideMenuItems = [
 
 export const technologiesInfo = [
   { name: "JavaScript", src: "./javascript.png", alt: "JavaScript logo" },
+  { name: "TypeScript", src: "./typescript.webp", alt: "JavaScript logo" },
   { name: "React", src: "./react.png", alt: "React logo" },
+  { name: "React Native", src: "./reactnative.svg", alt: "React Native logo" },
   { name: "SASS", src: "./sass.png", alt: "SASS logo" },
   { name: "HTML5", src: "./html.png", alt: "html logo" },
   { name: "CSS", src: "./css.png", alt: "css logo" },
@@ -83,6 +85,7 @@ export const technologiesInfo = [
   { name: "Tailwind", src: "./tailwind.png", alt: "Tailwind logo" },
   { name: "Bulma", src: "./bulma.png", alt: "Bulma logo" },
   { name: "Joi", src: "./joi.png", alt: "Joi logo" },
+  { name: "Zod", src: "./zod.png", alt: "Zod logo" },
   { name: "MUI", src: "./mui.png", alt: "MUIsha 256  logo" },
 ];
 
