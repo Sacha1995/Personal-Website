@@ -51,7 +51,7 @@ const Experience = () => {
               efficiently.
             </p>
             <ul>
-              {technologiesWebDeveloper.map((technology, index) => {
+              {technologiesReactDeveloper.map((technology, index) => {
                 return <li key={index}>{technology}</li>;
               })}
             </ul>
@@ -74,14 +74,22 @@ const Experience = () => {
           <p className="date"> August 2024 &ndash; November 2024 </p>
           <div>
             <p>
-              I designed and built a responsive website for iOWNA to make the
-              user experience smoother and attract more clients. Using Next.js,
-              Tailwind CSS, and TypeScript, I created a site that looks great
-              and works well on any device. The main goal was to keep things
-              user-friendly and visually appealing, so visitors enjoy their time
-              on the site and are more likely to convert into clients. I worked
-              closely with the marketing and product teams to make sure the site
-              supports iOWNA&#39;s goals and helps bring in new business.
+              I designed and built a{" "}
+              <a
+                href="https://iowna.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                responsive website
+              </a>{" "}
+              for iOWNA to make the user experience smoother and attract more
+              clients. Using Next.js, Tailwind CSS, and TypeScript, I created a
+              site that looks great and works well on any device. The main goal
+              was to keep things user-friendly and visually appealing, so
+              visitors enjoy their time on the site and are more likely to
+              convert into clients. I worked closely with the marketing and
+              product teams to make sure the site supports iOWNA&#39;s goals and
+              helps bring in new business.
             </p>
             <ul>
               {technologiesWebDeveloper.map((technology, index) => {
