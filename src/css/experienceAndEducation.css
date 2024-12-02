@@ -38,6 +38,20 @@
   margin-bottom: 10px;
   font-style: italic;
 }
+.experienceAndEducation .experienceItem ul {
+  list-style-type: none;
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-bottom: 5px;
+}
+.experienceAndEducation .experienceItem ul li {
+  border: white 1px solid;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 .experienceAndEducation .containerIcon {
   margin-top: 12px;
   flex-basis: 47px;
