@@ -1,0 +1,228 @@
+body {
+  background-color: #111111;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  --global-color: #ffb400;
+}
+
+.fill {
+  fill: var(--global-color);
+  stroke: var(--global-color);
+}
+
+.colour {
+  color: var(--global-color);
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 8px var(--global-color);
+}
+
+.bgColour {
+  background-color: var(--global-color);
+}
+
+.borderColour {
+  border-color: var(--global-color);
+}
+
+.bgGradient {
+  background: linear-gradient(to right, var(--global-color) 50%, #111111 50%);
+}
+
+.fill {
+  fill: var(--global-color);
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+  color: #ffffff;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.containerIntro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homePageImg {
+  background-image: url(/profile_photo_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #040404;
+  border-radius: 100%;
+  height: 263px;
+  width: 263px;
+  border: #252525, solid, 4px;
+}
+
+.homePageIntroText {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.containerButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 0px auto;
+  flex-direction: column-reverse;
+  gap: 15px 0px;
+}
+
+img {
+  color: white;
+}
+
+.burgerMenu,
+.closeIcon,
+.settingsIcon {
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  background-color: #252525;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.burgerMenu,
+.closeIcon {
+  right: 20px;
+}
+
+.settingsIcon {
+  left: 0px;
+  top: 0px;
+  animation: rotate 5s infinite linear;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.settingsIconContainer {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 20;
+  background-color: #252525;
+}
+
+.settingsContainer {
+  height: 0;
+  width: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.containerLinksNavBar {
+  color: white;
+  list-style-type: none;
+  margin-top: 20%;
+  padding: 20px;
+}
+.containerLinksNavBar li {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  border-bottom: rgba(211, 211, 211, 0.486) 1px solid;
+  cursor: pointer;
+}
+.containerLinksNavBar .navIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.slideMenu {
+  background: #252525 !important;
+  width: 50vw !important;
+  min-width: 370px;
+}
+
+.containerBtn {
+  color: white;
+  padding: 0px 0px 0px 20px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.2s;
+}
+.containerBtn .rightArrow {
+  height: 20px;
+}
+
+.containerBtnImg {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.btn {
+  background: none;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.containerPopUpSettings {
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 5;
+}
+.containerPopUpSettings .closeSettings {
+  display: block;
+  margin-left: auto;
+}
+.containerPopUpSettings p {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: #818080 solid 1px;
+}
+.containerPopUpSettings .colourIcon {
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 450px) {
+  .containerButtons {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=globals.css.map */

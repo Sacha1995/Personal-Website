@@ -1,0 +1,63 @@
+.contact {
+  padding: 20px 40px;
+  max-width: 500px;
+  margin: 0px auto 20px auto;
+}
+.contact h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact p {
+  margin-bottom: 10px;
+}
+.contact .btn {
+  margin: 0px auto;
+  display: block;
+  max-width: 200px;
+  align-self: center;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.contact .containerBtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 35px;
+  align-self: center;
+  margin: 0px auto 20px auto;
+}
+.contact .sendIcon {
+  height: 25px;
+  margin-right: 1px;
+}
+.contact label {
+  color: white;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #252525;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.contact .errorMessage {
+  margin-bottom: 3px;
+}
+.contact .feedback-message {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.contact .feedback-message.success {
+  color: green;
+}
+.contact .feedback-message.error {
+  color: red;
+}/*# sourceMappingURL=contact.css.map */

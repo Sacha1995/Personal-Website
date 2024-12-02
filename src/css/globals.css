@@ -1,0 +1,441 @@
+body {
+  background-color: #111111;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  --global-color: #ffb400;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.fill {
+  fill: var(--global-color);
+  stroke: var(--global-color);
+}
+
+.colour {
+  color: var(--global-color);
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 8px var(--global-color);
+}
+
+.bgColour {
+  background-color: var(--global-color) !important;
+}
+
+.borderColour {
+  border-color: var(--global-color);
+}
+
+.bgGradient {
+  background: linear-gradient(to right, var(--global-color) 50%, #111111 50%);
+}
+
+.fill {
+  fill: var(--global-color);
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+  color: #ffffff;
+}
+
+.name {
+  font-size: 28px;
+}
+
+.containerTextIntro h2 {
+  font-size: 20px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.blackDiv {
+  position: fixed;
+  top: 0;
+  background-color: #252525;
+  z-index: 21;
+}
+
+.blackDiv.left {
+  left: 0;
+}
+
+.blackDiv.right {
+  right: 0;
+}
+
+.yellowDot {
+  background-color: var(--global-color);
+  width: 10px;
+  /* Adjust size as needed */
+  height: 100px;
+  /* Adjust size as needed */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 22;
+}
+
+.yellowLine {
+  background-color: var(--global-color);
+  width: 2px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 22;
+}
+
+.containerIntro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerIntro .btn {
+  margin: 0px auto;
+  display: block;
+  max-width: 200px;
+  align-self: center;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.containerIntro .containerBtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 35px;
+  align-self: center;
+  margin: 0px auto 20px auto;
+}
+
+.homePageImg {
+  background-image: url(/profile_photo_bw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #040404;
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  border: #252525, solid, 4px;
+  aspect-ratio: 1/1;
+}
+
+.homePageIntroText {
+  text-align: center;
+  padding: 0px 30px;
+  max-width: 500px;
+}
+
+.containerArrowDown {
+  position: absolute;
+  bottom: 10px;
+}
+.containerArrowDown svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+img {
+  color: white;
+}
+
+.burgerMenu,
+.closeIcon,
+.settingsIcon {
+  position: fixed;
+  top: 20px;
+  padding: 10px;
+  background-color: #252525;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.burgerMenu,
+.closeIcon {
+  right: 20px;
+}
+
+.settingsIcon {
+  left: 0px;
+  animation: rotate 5s infinite linear;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.settingsIconContainer {
+  position: fixed;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 20;
+  background-color: #252525;
+}
+
+.settingsContainer {
+  height: 0;
+  width: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.containerNavigationIndicators {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 5px;
+  list-style-type: none;
+}
+.containerNavigationIndicators li {
+  height: 10px;
+  width: 10px;
+  background-color: #252525;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.containerLinksNavBar {
+  color: white;
+  list-style-type: none;
+  margin-top: 20%;
+  padding: 20px;
+}
+.containerLinksNavBar li {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-bottom: rgba(211, 211, 211, 0.486) 1px solid;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.containerLinksNavBar .navIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.slideMenu {
+  background: #252525 !important;
+  width: 50vw !important;
+  min-width: 370px;
+}
+
+.containerBtn {
+  color: white;
+  padding: 0px 0px 0px 20px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.2s;
+}
+.containerBtn .rightArrow {
+  height: 20px;
+}
+
+.containerBtnImg {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.btn {
+  background: none;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.containerSideMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 10px;
+  list-style-type: none;
+  z-index: 10;
+}
+.containerSideMenu .sideMenuItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+.containerSideMenu .sideMenuItem .sideMenuName {
+  position: absolute;
+  right: 45px;
+  white-space: nowrap;
+  background-color: var(--global-color);
+  color: #fff;
+  border-radius: 22px 0 0 22px;
+  transform: translateX(25px);
+  transition: padding-left 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  height: 45px;
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  padding: 0px 20px;
+  padding-left: 0px;
+}
+.containerSideMenu .sideMenuItem .containerIcon {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  background-color: #252525;
+  border-radius: 100%;
+  z-index: 6;
+  transition: background-color 0.3s ease;
+}
+.containerSideMenu .sideMenuItem .navIcon {
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+}
+.containerSideMenu .sideMenuItem:hover .sideMenuName {
+  transform: translateX(1px);
+  opacity: 1;
+  font-weight: 600;
+  z-index: 5;
+  padding-left: 20px;
+  pointer-events: all;
+  transition: padding-left 0.3s ease, opacity 0.3s ease;
+}
+.containerSideMenu .sideMenuItem:hover .containerIcon {
+  border-radius: 0 22px 22px 0;
+  background-color: var(--global-color);
+}
+
+.socialsContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 5px;
+  gap: 5px;
+  transform: translateY(-50%);
+}
+.socialsContainer svg {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+  fill: white;
+}
+.socialsContainer svg:hover {
+  fill: var(--global-color) !important;
+  transition: fill 0.3s ease;
+}
+
+#tsparticles {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.containerPopUpSettings {
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 5;
+}
+.containerPopUpSettings .closeSettings {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+.containerPopUpSettings p {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: #818080 solid 1px;
+}
+.containerPopUpSettings .colourIcon {
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 450px) {
+  .containerButtons {
+    flex-direction: row;
+  }
+}
+@media (min-width: 576px) {
+  .name {
+    font-size: 46px;
+  }
+  .containerTextIntro h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 800px) {
+  .socialsContainer {
+    gap: 10px;
+  }
+  .socialsContainer svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+.unstyled-button {
+  text-decoration: none;
+}/*# sourceMappingURL=globals.css.map */

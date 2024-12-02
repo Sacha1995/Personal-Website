@@ -134,12 +134,35 @@
 
 //modal
 .box {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  width: 90%;
   transform: translate(-50%, -50%);
+  height: auto;
+  width: 90vw;
   max-width: 1000px;
+  aspect-ratio: 20 / 19;
+  border-radius: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+  z-index: 10;
+}
+
+.modalImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 20px;
 }
 
 //carousel
@@ -326,6 +349,14 @@
         margin-top: 1px;
       }
     }
+  }
+}
+
+@media (min-width: 700px) {
+  .box {
+    height: 90vh;
+    width: auto;
+    max-width: 1000px;
   }
 }
 
