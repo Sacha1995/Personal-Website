@@ -27,7 +27,7 @@ const BurgerMenu = ({ refs, activeSection }) => {
   return (
     <>
       <div
-        tabindex="0"
+        tabIndex="0"
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             toggleDrawer();
@@ -53,7 +53,7 @@ const BurgerMenu = ({ refs, activeSection }) => {
         customIdSuffix="my-drawer"
       >
         <div
-          tabindex="0"
+          tabIndex="0"
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               toggleDrawer();

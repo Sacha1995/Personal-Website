@@ -32,7 +32,7 @@ const Button = ({
           backgroundSize: "200% 100%",
         }}
       >
-        <button className="btn" tabindex="-1">
+        <button className="btn" tabIndex="-1">
           {buttonText}
         </button>
         {src && (
