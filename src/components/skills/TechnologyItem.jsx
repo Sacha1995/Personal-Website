@@ -1,6 +1,6 @@
-const TechnologyItem = ({ src, alt, name }) => {
+const TechnologyItem = ({ src, alt, name, key }) => {
   return (
-    <div className="technologyItem" key={name}>
+    <div className="technologyItem">
       <img src={src} alt={alt} className={`technologyIcon ${name}`} />
       <p>{name}</p>
     </div>
