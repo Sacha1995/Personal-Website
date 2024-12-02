@@ -76,6 +76,7 @@ const SettingsPopUp = ({ displayPopUp, togglePopUp, settingsRef }) => {
             const { hex, colour } = item;
             return (
               <div
+                key={hex}
                 tabIndex="0"
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
