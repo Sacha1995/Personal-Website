@@ -84,15 +84,14 @@ const SectionProjects = ({
               aria-label={`modal ${title}`}
             >
               <Box className="box" ref={modalRef}>
-                <img
-                  src={src}
-                  alt={title}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    borderRadius: "20px",
-                  }}
-                />
+                <button
+                  className="closeButton"
+                  onClick={handleClose}
+                  aria-label="Close modal"
+                >
+                  &times;
+                </button>
+                <img src={src} alt={title} className="modalImage" />
               </Box>
             </Modal>
             <h3>{title}</h3>

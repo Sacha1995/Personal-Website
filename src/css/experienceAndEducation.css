@@ -1,0 +1,86 @@
+.experienceAndEducation {
+  padding: 20px 40px;
+  max-width: 850px;
+}
+.experienceAndEducation h2,
+.experienceAndEducation h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experienceAndEducation h1 {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.experienceAndEducation h3 {
+  color: white;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.experienceAndEducation ol {
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.experienceAndEducation ul {
+  color: white;
+}
+.experienceAndEducation .experienceItem,
+.experienceAndEducation .educationItem {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(3, fit-content(50px));
+  align-items: flex-start;
+}
+.experienceAndEducation .experienceItem .date,
+.experienceAndEducation .educationItem .date {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.experienceAndEducation .containerIcon {
+  margin-top: 12px;
+  flex-basis: 47px;
+}
+.experienceAndEducation .containerIcon .containerBackground {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.experienceAndEducation .containerIcon .containerBackground .expIcon,
+.experienceAndEducation .containerIcon .containerBackground .eduIcon {
+  height: 20px;
+}
+.experienceAndEducation .containerStylingFront {
+  grid-column: 1;
+  grid-row: 1/4;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+.experienceAndEducation .containerStylingFront .line {
+  height: 100%;
+  width: 2px;
+  background-color: #252525;
+}
+.experienceAndEducation .specialisation {
+  font-style: italic;
+}
+@media (min-width: 550px) {
+  .experienceAndEducation h1 {
+    max-width: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .experienceAndEducation {
+    padding: 20px 60px;
+    margin: 0px auto 20px auto;
+  }
+}/*# sourceMappingURL=experienceAndEducation.css.map */

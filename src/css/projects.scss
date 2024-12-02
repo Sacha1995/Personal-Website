@@ -134,12 +134,39 @@
 
 //modal
 .box {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 90%;
-  transform: translate(-50%, -50%);
   max-width: 1000px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed */
+  right: 10px;
+  /* Adjust as needed */
+  background: none;
+  border: none;
+  font-size: 24px;
+  /* Adjust for size */
+  cursor: pointer;
+  color: #fff;
+  /* Change based on your design */
+  z-index: 10;
+  cursor: pointer;
+}
+
+.modalImage {
+  width: auto;
+  height: 90vh;
+  max-height: 1000px;
+  aspect-ratio: 20 / 19;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center top;
+  transform: translate(-50%, -50%);
 }
 
 //carousel

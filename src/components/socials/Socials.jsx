@@ -10,8 +10,8 @@ const Socials = () => {
               data-original="#000000"
             ></path>
           </g>
-          <span className="vh">Link to Github Profile</span>
         </svg>
+        <span className="vh">Link to Github Profile</span>
       </a>
       <a href="https://www.linkedin.com/in/sachauijlen/" target="_blank">
         <svg width="512" height="512" x="0" y="0" viewBox="0 0 176 176">
@@ -23,8 +23,8 @@ const Socials = () => {
               data-original="#000000"
             ></path>
           </g>
-          <span className="vh">Link to Linked in profile</span>
         </svg>
+        <span className="vh">Link to Linked in profile</span>
       </a>
     </div>
   );
